@@ -53,11 +53,12 @@
 				
 				// If we are importing a library from the HTML5 namespace
 				if (strpos($html5_import_path, 'html5') === 0) {
-					
-					
 					//First thing first - Check whether file exits or not
-					if (is_file($base_name . DS . str_replace('html5'.DS, '', $html5_import_path).'.php')) {
-						self::$_html5_classes_imported[strtolower($html5_class_to_import)] = $base_name . DS . str_replace('html5'.DS, '', $html5_import_path).'.php';
+					if (is_file($base_name . DS . str_replace('html5'.DS, '', $html5_import_path).
+						'.php')) {
+						self::$_html5_classes_imported[strtolower($html5_class_to_import)] = 
+						$base_name . DS . 
+						str_replace('html5'.DS, '', $html5_import_path).'.php';
 						$success = true;
 					}else{
 						echo "No, The file doesn't exits ";
