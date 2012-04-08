@@ -27,8 +27,8 @@
 	
 	//ading the main project file to start working
 	require_once _html5_root.'/html5.php';
-
+	echo '<pre>';
 	$p = new html5();
-	
+	print_r($p);
 
 ?>
